@@ -5,16 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:CustomApp.Pages"
     xmlns:views="clr-namespace:CustomApp.Views"
-    xmlns:pages1="clr-namespace:CustomApp.Models.Pages"
     FlyoutBackgroundColor="LightBlue"
-    FlyoutBehavior="Locked"
+    FlyoutBehavior="Flyout"
     Title="CustomApp">
 
     <Shell.FlyoutHeader>
         <views:ShellFlyoutHeader />
     </Shell.FlyoutHeader>
     <FlyoutItem Title="Calculator">
-        <ShellContent ContentTemplate="{DataTemplate pages1:CalculatorPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate pages:Calculator}"/>
     </FlyoutItem>
     <FlyoutItem Title="Users" Icon="user.png" Route="users">
         <ShellContent ContentTemplate="{DataTemplate pages:UsersPage}" />
@@ -22,7 +21,7 @@
     <FlyoutItem Title="Issues" Icon="issue.png" Route="issues">
         <ShellContent ContentTemplate="{DataTemplate pages:IssuesPage}" />
     </FlyoutItem>
-
+    
     <Shell.FlyoutFooter>
         <views:ShellFlyoutFooter />
     </Shell.FlyoutFooter>

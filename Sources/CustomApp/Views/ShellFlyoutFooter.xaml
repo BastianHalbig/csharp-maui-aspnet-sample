@@ -7,7 +7,7 @@
         <models:ShellFlyoutFooterModel />
     </ContentView.BindingContext>
     <StackLayout Margin="20">
-        <Label Text="CustomApp v0.0.1"
+        <Label Text="HelloDarknessMyOldFriend"
                FontAttributes="Bold"
                HorizontalOptions="Center"/>
     </StackLayout>
